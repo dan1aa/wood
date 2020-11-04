@@ -1,4 +1,46 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+.main_start{
+	height: 100vh;
+	width: 100%;
+	background-image: url('../img/main.jpg');
+	background-attachment: cover;
+	background-size: 100%;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background: #026346;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px 0 15px;
+	align-items: center;
+	color: white;
+}
+
+header > div:first-child {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > div:first-child > li {
+	list-style: none;
+	font-size: 24px;
 }
