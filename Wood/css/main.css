@@ -1,7 +1,13 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: comfortaa;
+}
+
+@font-face{
+	font-family: 'comfortaa';
+	src: url('../fonts/Comfortaa-VariableFont_wght.ttf');
 }
 
 .container {
@@ -13,34 +19,111 @@
 	overflow-x: hidden;
 }
 
-.main_start{
-	height: 100vh;
+.main_start {
+	height: calc(100vh - 100px);
 	width: 100%;
 	background-image: url('../img/main.jpg');
 	background-attachment: cover;
+	background-position: 0 -350px;
 	background-size: 100%;
+	display: flex;
+	align-items: flex-end;
 }
 
 header {
 	width: 100%;
 	height: 100px;
-	background: #026346;
 	display: flex;
 	justify-content: space-between;
 	padding: 0 15px 0 15px;
 	align-items: center;
+	background: #3a3a3a;
+}
+
+header * {
 	color: white;
 }
 
 header > div:first-child {
-	width: 40%;
+	width: 30%;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
+header > div:first-child > img {
+	width: 148px;
+	filter: brightness(140%);
+}
 header > div:first-child > li {
 	list-style: none;
-	font-size: 24px;
+	font-size: 20px;
+	cursor: pointer;
+}
+header > div:first-child > li:nth-child(2) {
+	border-bottom: 1px solid white;
+}
+.information_header_block {
+	width: 200px;
+	height: 50px;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: flex-start;
+	justify-content: center; 
+}
+.information_line {
+	width: 100%;
+	height: 1px;
+	background: white;
+	margin: 5px 0 5px 0;
+}
+
+/*MainBlock*/
+
+.main_quote {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	padding-left: 10px;
+}
+.main_quote > h1 {
+	font-size: 36px;
+	color: white;
+	margin-bottom: 15px;
+}
+.main_quote > span {
+	font-size: 28px;
+	width: 1200px;
+	color: white;
+	margin-bottom: 20px;
+}
+.main_quote > .slider_buttons {
+	width: 200px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+}
+.main_quote > .slider_buttons > button {
+	width: 80px;
+	height: 80px;
+	outline: none;
+	border: none;
+	color: white;
+	background: #7A7A7A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	opacity: .8;
+}
+.main_quote > .slider_buttons > button:first-child {
+	margin-right: 40px;
+}
+.main_quote > .slider_buttons > button > img {
+	filter: brightness(0) invert(1);
+}
+.main_quote > .slider_buttons > button:first-child > img {
+	transform: rotate(180deg);
 }
