@@ -24,7 +24,7 @@ html, body {
 	overflow-x: hidden;
 }
 
-.main_start {
+.main__start {
 	height: calc(100vh - 100px);
 	width: 100%;
 	background-image: url('../img/main.jpg');
@@ -41,7 +41,7 @@ header {
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 15px 0 15px;
+	padding: 0 35px 0 35px;
 	align-items: center;
 	background: #3a3a3a;
 }
@@ -50,26 +50,26 @@ header * {
 	color: white;
 }
 
-header > div:first-child {
+.header__overlay {
 	width: 30%;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-header > div:first-child > img {
+.header__overlay > img {
 	width: 148px;
 	filter: brightness(140%);
 }
-header > div:first-child > li {
+.header__li {
 	list-style: none;
 	font-size: 20px;
 	cursor: pointer;
 }
-header > div:first-child > li:nth-child(2) {
+.header__li:nth-child(2) {
 	border-bottom: 1px solid white;
 }
-.information_header_block {
+.information__header {
 	width: 200px;
 	height: 50px;
 	display: flex;
@@ -77,7 +77,7 @@ header > div:first-child > li:nth-child(2) {
 	align-items: flex-start;
 	justify-content: center; 
 }
-.information_line {
+.information__line {
 	width: 100%;
 	height: 1px;
 	background: white;
@@ -86,7 +86,7 @@ header > div:first-child > li:nth-child(2) {
 
 /*MainBlock*/
 
-.main_quote {
+.main__quote {
 	width: 100%;
 	height: 400px;
 	display: flex;
@@ -94,24 +94,24 @@ header > div:first-child > li:nth-child(2) {
 	flex-direction: column;
 	padding-left: 100px;
 }
-.main_quote > h1 {
+.main__quote > h1 {
 	font-size: 36px;
 	color: white;
 	margin-bottom: 15px;
 }
-.main_quote > span {
+.quote {
 	font-size: 28px;
 	width: 1200px;
 	color: white;
 	margin-bottom: 20px;
 }
-.main_quote > .slider_buttons {
+.slider__buttons {
 	width: 200px;
 	height: 80px;
 	display: flex;
 	justify-content: center;
 }
-.main_quote > .slider_buttons > button {
+.slider__button {
 	width: 80px;
 	height: 80px;
 	outline: none;
@@ -124,19 +124,19 @@ header > div:first-child > li:nth-child(2) {
 	cursor: pointer;
 	opacity: .8;
 }
-.main_quote > .slider_buttons > button:first-child {
+.slider_button:first-child {
 	margin-right: 40px;
 }
-.main_quote > .slider_buttons > button > img, .form_wrapper img {
+.slider__button > img, .form_wrapper img {
 	filter: brightness(0) invert(1);
 }
-.main_quote > .slider_buttons > button:first-child > img {
+.slider__button:nth-child(1) > img {
 	transform: rotate(180deg);
 }
 
 /* what we do */
 
-.what_we_do {
+.whatwedo {
 	width: 100%;
 	height: 350px;
 	display: flex;
@@ -145,27 +145,28 @@ header > div:first-child > li:nth-child(2) {
 	align-items: center;
 }
 
-.h1_row {
+.whatwedo__main__row {
 	width: 1300px;
 	margin-bottom: 30px;
 }
 
-.h1_row > h1 {
+.whatwedo__title {
 	font-size: 36px;
 }
 
-.what_we_do_items {
+.whatwedo__blocks {
 	width: 1300px;
 	display: flex;
 	justify-content: space-between;
 }
-.what_we_do_items > div {
+.whatwedo__block {
 	display: flex;
 	flex-direction: column;
 	height: 150px;
+	width: 240px;
 }
 
-.what_we_do_h1_row {
+.whatwedo__row {
 	width: 300px;
 	height: 20px;
 	display: flex;
@@ -173,18 +174,15 @@ header > div:first-child > li:nth-child(2) {
 	margin-bottom: 15px;
 }
 
-.what_we_do_h1_row .line {
+.whatwedo__line {
 	width: 20px;
 	height: 2px;
 	background: black;
 	margin-right: 5px;
 }
 
-.what_we_do_items > div > span {
-	width: 200px;
-}
 
-.information_timber_row {
+.timber__row {
 	width: 100%;
 	height: 80px;
 	background: #026346;
@@ -193,13 +191,13 @@ header > div:first-child > li:nth-child(2) {
 	align-items: center;
 }
 
-.information_timber_row span {
+.timber__span {
 	font-size: 24px;
 	color: white;
 	margin-right: 50px;
 }
 
-.information_timber_row button, .contact_row button {
+.timber__button, .contact__button {
 	width: 120px;
 	height: 40px;
 	border-radius: 15px;
@@ -212,7 +210,10 @@ header > div:first-child > li:nth-child(2) {
 }
 
 /* Products */
-
+.product__main__row {
+	width: 1300px;
+	margin-bottom: 30px;
+}
 button[read-more] {
 	width: 145px;
 	height: 45px;
@@ -230,7 +231,7 @@ div[product] {
 	align-items: flex-start;
 }
 
-.product_prewiew {
+.product__prewiew {
 	width: 100%;
 	height: 870px;
 	display: flex;
@@ -240,13 +241,13 @@ div[product] {
 }
 
 
-.product_items {
+.product__items {
 	width: 1300px;
 	height: 660px;
 	display: flex;
 	margin-bottom: 40px;
 }
-.product_items > div:first-child {
+.product__items > div:first-child {
 	width: 400px;
 	height: 100%;
 	border-radius: 15px;
@@ -255,7 +256,7 @@ div[product] {
 	background-repeat: no-repeat;
 }
 
-.product_items > div:nth-child(2) {
+.product__items > div:nth-child(2) {
 	width: 850px;
 	height: 100%;
 	display: flex;
@@ -264,7 +265,7 @@ div[product] {
 	justify-content: center;
 }
 
-.product_items > div:nth-child(2) > div:first-child {
+.product__items > div:nth-child(2) > div:first-child {
 	width: 800px;
 	height: 315px;
 	background: green;
@@ -276,45 +277,33 @@ div[product] {
 	margin-bottom: 30px;
 }
 
-.product_items > div:nth-child(2) > div:nth-child(2) {
+.product__items > div:nth-child(2) > div:nth-child(2) {
 	width: 800px;
 	height: 315px;
 	display: flex;
 }
 
-.product_items > div:nth-child(2) > div:nth-child(2) > div {
+.product__items > div:nth-child(2) > div:nth-child(2) > div {
 	width: 390px;
 	height: 315px;
 	border-radius: 15px;
 }
 
-.product_items > div:nth-child(2) > div:nth-child(2) > div:first-child {
+.product__items > div:nth-child(2) > div:nth-child(2) > div:first-child {
 	margin-right: 30px;
 	background-image: url('../img/prewiew_three.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-.product_items > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+.product__items > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
 	background-image: url('../img/prewiew_four.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-
-.bottom_row {
-	width: 1500px;
-	display: flex;
-	justify-content: flex-end;
-}
-
-.bottom_row a {
-	color: black;
-	text-decoration: none;
-	font-weight: bolder;
-}
 /* Contact row */
 
-.contact_row {
+.contact__row {
 	width: 100%;
 	height: 80px;
 	background: #026346;
@@ -325,7 +314,7 @@ div[product] {
 	font-size: 24px;
 }
 
-.contact_row span {
+.contact__span {
 	margin-right: 40px;
 }
 
@@ -357,69 +346,70 @@ footer img {
 	filter: brightness(0) invert(1);
 }
 
-.footer_content {
+.footer__content {
 	width: 250px;
 	height: 280px;
 	display: flex;
 	flex-direction: column;
 }
 
-.footer_content_title {
+.footers__title {
 	width: 100%;
 	height: 20px;
 	display: flex;
 	margin-bottom: 20px;
 }
 
-.footer_content_row {
+.footers__row {
 	width: 100%;
 	height: 50px;
 	margin-bottom: 10px;
 	display: flex;
 	align-items: flex-start;
 }
-.footer_content_row img {
+.footers__row img {
 	margin-right: 15px;
 }
 
-.footer_content:first-child > .footer_content_title {
+.footer__content:first-child > .footers__title {
 	justify-content: flex-start;
 }
-.footer_content:nth-child(2) > .footer_content_title {
+.footer__content:nth-child(2) > .footers__title {
 	justify-content: center;
 }
-.footer_content:nth-child(3) > .footer_content_title {
+.footer__content:nth-child(3) > .footers__title {
 	justify-content: flex-end;
 }
 
-.footer_links {
+.footer__links {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.footer_links * {
+.footer__links * {
 	margin-bottom: 20px;
 	text-decoration: none;
+	font-size: 18px;
 }
 
-.footer_about_content {
+.about__footer {
 	display: flex;
 	flex-direction: column;
 }
 
-.footer_about_content span {
+.about__footer span {
 	text-align: right;
 }
 
-.footer_about_content span:first-child {
+.about__span {
 	margin-bottom: 30px;
 	color: #818181;
 }
 
 /*Form*/
 
-.form_wrapper {
+.form__wrapper {
 	width: 900px;
 	height: 450px;
 	background: white;
@@ -433,22 +423,26 @@ footer img {
 	display: none;
 }
 
-.left_form_menu {
+.form__wrapper img {
+	filter: brightness(0) invert(1) ;
+}
+
+.form__menu {
 	width: 300px;
 	height: 100%;
 	background: #026346;
 	border-radius: 15px 0 0 15px;
 	display: flex;
 	flex-direction: column;
-	padding: 15px;
+	padding: 25px;
 }
 
-.left_form_menu h1 {
+.contactus__title {
 	color: white;
 	margin-bottom: 20px;
 }
 
-.left_form_menu_rows {
+.contactus__rows {
 	width: 100%;
 	height: 50px;
 	margin-bottom: 5px;
@@ -457,6 +451,11 @@ footer img {
 	color: white;
 }
 
-.left_form_menu_rows > img {
+.contactus__rows > img {
 	margin-right: 10px;
+	width: 24px;
+}
+
+.contactus__rows > span {
+	font-size: 14px;
 }
