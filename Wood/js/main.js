@@ -1,7 +1,7 @@
 window.onload = function () {
 	let isFormOpen = false;
-	const formOpenButton = document.querySelector('.open_contact_button');
-	const formPopUp = document.querySelector('.form_wrapper');
+	const formOpenButton = document.querySelector('.contact__button');
+	const formPopUp = document.querySelector('.form__wrapper');
 
 	formOpenButton.onclick = function() {
 		isFormOpen 
