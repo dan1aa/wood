@@ -128,7 +128,7 @@ p{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
 .cnaco__text{
 	width: 45%;
@@ -159,7 +159,7 @@ p{
 	background: lightgrey;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 .content__whychoose__choose{
@@ -231,4 +231,32 @@ p{
 	opacity: 1;
 	font-family: sans-serif;
 	font-size: 28px;
+}
+.information_timber_row {
+	width: 100%;
+	height: 80px;
+	background: #026346;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.information_timber_row span {
+	font-size: 24px;
+	color: white;
+	margin-right: 50px;
+	font-family: sans-serif;
+}
+
+.information_timber_row button, .contact_row button {
+	width: 120px;
+	height: 40px;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	background: #52B194;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: sans-serif;
 }
