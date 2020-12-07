@@ -1,0 +1,34 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Product
+  link(rel='stylesheet' href='css/simpleProduct.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/fonts.css')
+  link(rel='stylesheet' href='css/footer.css')
+  body
+    .container__product
+        include header.pug
+        .higher__product
+          .product
+            .product__photo
+              .product__image
+                .available__row
+                  .available
+                .left__right
+                  .left__right__row
+                    .left
+                      img(src="img/arrow.png", alt="")
+                    .right
+                      img(src="img/arrow.png", alt="")
+              hr
+              .product__slideshow
+                each val in [1,2,3,4]
+                  .product__small
+            .product__description
+              h1.product__title Product name
+              span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, tempora. Eius, fugiat earum a minima, numquam ipsum eveniet quibusdam vel quidem ipsam neque non deserunt. Voluptas qui eius ea suscipit.
+              .size
+              button.contact__button Contact us
+        include footer.pug

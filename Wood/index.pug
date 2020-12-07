@@ -1,0 +1,95 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Main
+  link(rel='stylesheet' href='css/main.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+  link(rel='stylesheet' href='css/fonts.css')
+
+
+.container
+  include header.pug
+  .main__start
+    .main__quote
+      h1 Lorem ipsum dolor
+      p.quote
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis, repellendus. Eum suscipit culpa in velit ad. Itaque recusandae suscipit maiores sunt quae asperiores, ut laborum soluta doloremque sed velit!
+      .slider__buttons
+        button.slider__button
+          img(src='img/arrow.png' alt='')
+        button.slider__button
+          img(src='img/arrow.png' alt='')
+  .whatwedo
+    .whatwedo__main__row
+      h1.whatwedo__title What we do?
+    .whatwedo__blocks
+      .whatwedo__block
+        .whatwedo__row
+          .whatwedo__line
+          h2 Lorem Ipsum
+        span
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eveniet dicta ratione aspernatur maiores voluptate
+      .whatwedo__block
+        .whatwedo__row
+          .whatwedo__line
+          h2 Lorem Ipsum
+        span
+          | Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sed ipsa reiciendis, labore animi, rem in. Suscipit, ipsum! Tempo
+      .whatwedo__block
+        .whatwedo__row
+          .whatwedo__line
+          h2 Lorem Ipsum
+        span
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores illum modi deserunt, voluptas voluptatibus
+  .timber__row
+    span.timber__span TIMBER FOR ANY YOUR CONSTRUCTION
+    button.timber__button Click here
+  .product__prewiew
+    .product__main__row
+      h1 Our products
+    .product__items
+      div(product='')
+        button(read-more='product-1') 
+          a(href="simpleProduct.html") Read more
+      div
+        div(product='')
+          button(read-more='product-2') 
+            a(href="simpleProduct.html") Read more
+        div
+          div(product='')
+            button(read-more='product-3') 
+              a(href="simpleProduct.html") Read More
+          div(product='')
+            button(read-more='product-4') 
+              a(href="simpleProduct.html") Read More
+  .contact__row
+    span.contact__span Do you have questions?
+    button.contact__button Contact us
+  .map
+  include footer.pug 
+.form__wrapper
+  .form__menu
+    h1.contactus__title Contact us
+    .contactus__items
+      .contactus__rows
+        img(src='img/gps.png' alt='')
+        span Ukraine, str. Galytska 84.
+      .contactus__rows
+        img(src='img/phone.png' alt='')
+        span 000-00-00-000
+      .contactus__rows
+        img(src='img/mail.png' alt='')
+        span testemail.com@mail.com
+  form(action='')
+    h1 Get in touch
+    span.forms__span Drop us a message!
+    input.forms__inputs(placeholder="Enter your name")
+    input.forms__inputs(placeholder="Enter your email")
+    input.forms__inputs(placeholder="Enter your city/town")
+    textarea.forms__textarea(placeholder="Drop us a message!")
+    button.send__button Send
+  img.form__cross(src="img/cross.png")
+script(src='js/main.js')
+script(src='js/product.js')

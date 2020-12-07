@@ -1,0 +1,226 @@
+*{
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+	overflow-x: none;
+}
+b {
+	color: #026346;
+	filter: brightness(200%);
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+/* Content */
+content{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content__greattimber{
+	width: 100%;
+	height: calc(100vh - 100px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/truck.jpg) no-repeat;
+	background-attachment: cover;
+	background-size: 100%;
+}
+.content__main{
+	width: 1300px;
+	height: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.content__box{
+	background: black;
+	width: 700px;
+	height: 300px;
+	opacity: 70%;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.content__box > p{
+	width: 85%;
+	height: auto;
+	color: #fff;
+	font-size: 35px;
+	opacity: 1;
+	text-align: center;
+}
+h1{
+	font-size: 34px;
+	font-weight: normal;
+}
+p{
+	margin-top: 10px;
+	font-size: 16px;
+}
+.aboutus {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: row;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutus__main{
+	width: 1100px;
+	height: 350px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.about__information{
+	width: 550px;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.aboutus__title {
+	font-size: 36px;
+}
+.aboutus__photo{
+	width: 40%;
+	height: auto;
+}
+.aboutus__text span{
+	font-size: 22px;
+}
+
+
+.whychoose{
+	width: 100%;
+	height: 800px;
+	background: #F0EBEB;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.whychoose__main{
+	width: 1300px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.whychoose__cards{
+	width: 100%;
+	height: 650px;
+	display: grid;
+	grid-template-rows: 37.5% 59.5%;
+	grid-template-columns: 46% auto;
+	grid-gap: 20px;
+}
+.dacks{
+	width: 100%;
+	height: 100%;
+	grid-row: 1 / 3;
+	background: url(..//img/dacks.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+.boardand{
+	width: 100%;
+	height: 100%;
+	grid-column: 2 / 3;
+	background: url(..//img/boards.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+.rels{
+	width: 100%;
+	height: 100%;
+	grid-column: 2 / 3;
+	background: url(..//img/rails.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+.whychoose__box{
+	margin: 0;
+	width: 80%;
+	height: 70%;
+	background: black;
+	opacity: 0.7;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+.whychoose__box > p{
+	margin: 0;
+	width: 80%;
+	color: #fff;
+	opacity: 1;
+	font-size: 28px;
+}
+.information_timber_row {
+	width: 100%;
+	height: 80px;
+	background: #026346;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.information_timber_row span {
+	font-size: 28px;
+	color: white;
+	margin-right: 50px;
+}
+.line{
+	width: 120px;
+	height: 3px;
+	background: black;
+}
+
+.information_timber_row button, .contact_row button {
+	width: 120px;
+	height: 40px;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	background: #52B194;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+/* Map */
+
+.map {
+	width: 100%;
+	height: 500px;
+}

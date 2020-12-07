@@ -1,0 +1,59 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title About Us
+  link(rel='stylesheet' href='css/about.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+  link(rel='stylesheet' href='css/fonts.css')
+  .container
+  include header.pug
+  content
+    .content__greattimber
+      .content__main
+        .content__box
+          p
+            | <b>GreatTimber Limited</b> is a British company specialising in the trading and wholesale of agricultural timber products.
+    .aboutus
+      .aboutus__main
+        .about__information
+          .aboutus__name
+            h1.aboutus__title IN NUTSHELL ABOUT US
+            .line
+          .aboutus__text
+            span
+              | We are operating several sawmills on the territory of Ukraine which allow us to offer you a wide range of high quality domestic products. We source, ship and distribute a wide range of timber products including construction timber, agricultural timber....
+        img.aboutus__photo(src='img/boardss.jpg')
+    .aboutus
+      .aboutus__main
+        img.aboutus__photo(src='img/woodss.jpg')
+        .about__information
+          .aboutus__name
+            h1.aboutus__title OUR TIMBER
+            .line
+          .aboutus__text
+            span
+              | Our timber is produced from coniferous trees and manufactured in various different sizes and profiles in order to meet your equirements. For details about our product variety, click here.
+    .information_timber_row
+      span Do you have some questions?
+      button Click here
+    .whychoose
+      .whychoose__main
+        .whychoose__choose
+          h1 WHY CHOOSE US
+          .line
+        .whychoose__cards
+          .dacks
+            .whychoose__box
+              p
+                | As an importer we ensure that all the standards and regulation are met. Our factories are operating against FSC standards, and other reputable forest management certification schemes when applicable.
+          .boardand
+            .whychoose__box
+              p Our aim is to produce a personalised service to meet your needs.
+          .rels
+            .whychoose__box
+              p
+                | And be by your side starting from accepting your order up to the timely delivery of your product.
+    .map
+  include footer.pug

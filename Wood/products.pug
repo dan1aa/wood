@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Products
+  link(rel='stylesheet' href='css/products.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+  link(rel='stylesheet' href='css/fonts.css')
+
+  .container
+    include header.pug
+    content
+        .content__main
+            .content__cards
+                each val in [1,2,3,4,5,6]
+                    .content__card
+                        .content__box
+                            button Read more
+    .information_timber_row
+        span Do you have some questions?
+        button Click here
+    .map
+    include footer.pug

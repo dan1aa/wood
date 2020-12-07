@@ -1,7 +1,7 @@
-window.onload = function () {
 	let isFormOpen = false;
 	const formOpenButton = document.querySelector('.contact__button');
 	const formPopUp = document.querySelector('.form__wrapper');
+	const cross = document.querySelector('.form__cross');
 
 	formOpenButton.onclick = function() {
 		isFormOpen 
@@ -19,9 +19,8 @@ window.onload = function () {
 		formPopUp.style.display = 'flex'
 	}
 
-	formPopUp.onclick = function() {
+	cross.onclick = function() {
 		isFormOpen = false
 		formPopUp.style.display = 'none'
 		document.querySelector('.container').style.filter = 'blur(0px)'
 	}
-}
