@@ -11,7 +11,7 @@ footer {
 
 img[footer__logo] {
 	width: 256px;
-	filter: brightness(140%);
+	filter: brightness(180%);
 }
 
 footer * {
@@ -91,5 +91,27 @@ footer * {
 
 .about__span {
 	margin-bottom: 30px;
-	color: #818181;
+	color: #9c9c9c;
+}
+@media (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		height: 840px;
+	}
+	.about__footer span {
+		text-align: center;
+	}
+	.footer__content:first-child > .footers__title, .footer__content:nth-child(3) > .footers__title, .footer__content:nth-child(2) > .footers__title {
+		justify-content: center;
+	}
+	.footer__content:first-child > .footers__title {
+		margin-bottom: 25px;
+	}
+	.footers__row {
+		justify-content: center;
+	}
+	.footers__row > img {
+		display: none;
+	}
+	
 }
