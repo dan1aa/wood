@@ -77,7 +77,7 @@ h1{
 
 .aboutus__main{
 	width: 1300px;
-	height: 350px;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -88,7 +88,7 @@ h1{
 	height: 70%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: flex-start;
 }
 .aboutus__title {
@@ -101,7 +101,6 @@ h1{
 .aboutus__text span{
 	font-size: 24px;
 }
-
 
 .whychoose{
 	width: 100%;
@@ -227,16 +226,6 @@ h1{
 /* Tablet */
 
 @media  (min-width: 450px) and (max-width: 1024px) {
-	h1{
-		font-size: 2em;
-		font-weight: bold;
-		text-align: center;
-	}
-	.aboutus__title{
-		font-size: 2em;
-		font-weight: bold;
-		padding-bottom: 5%;
-	}
 	.content__greattimber{
 		background-position: -250px -100px;
 		background-size: 200%;
@@ -266,10 +255,21 @@ h1{
 		align-items: center;
 		justify-content: center;
 	}
+	.aboutus__photo{
+		display: none;
+	}
+	.aboutus__title{
+		font-size: 2em;
+		font-weight: bold;
+		padding-bottom: 5%;
+	}
 	.aboutus__text span{
 		text-align: center;
 		font-size: 20px;
 		padding-left: 5%;
+	}
+	.whychoose{
+		height: 1400px;
 	}
 	.whychoose__main{
 		width: 700px;
@@ -279,25 +279,21 @@ h1{
 	.whychoose__choose{
 		margin-top: 15px;
 	}
+	h1{
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+	.whychoose__cards{
+		height: 1200px;
+		grid-template-rows: 50% 20% 27%;
+		grid-template-columns: 100%;
+		grid-gap: 15px;
+	}
 	.whychoose__box > p{
 		text-align: center;
 		font-size: 24px;
 		padding-left: 5%;
-	}
-	.line{
-		display: none;
-	}
-	.aboutus__photo{
-		display: none;
-	}
-	.whychoose{
-		height: 1400px;
-	}
-	.whychoose__cards{
-		height: 1200px;
-		grid-template-rows: 50% 20% 30%;
-		grid-template-columns: 100%;
-		grid-gap: 15px;
 	}
 	.dacks{
 		grid-row: 1 / 2;
@@ -309,5 +305,118 @@ h1{
 	.rels{
 		grid-column: 1 / 2;
 		grid-row: 3 / 4;
+	}
+	.line{
+		display: none;
+	}
+	.map {
+		width: 100%;
+		height: 250px;
+	}
+}
+/* Mobile */
+
+@media  (max-width: 450px){
+	.content__greattimber{
+		background-position: -250px 0px;
+		background-size: 300%;
+	}
+	.content__main{
+		width: 330px;
+		justify-content: center;
+		align-items: center;
+	}
+	.content__box{
+		width: 100%;
+		height: 250px;
+	}
+	.content__box > p{
+		font-size: 22px;
+	}
+	.aboutus{
+		height: 250px;
+	}
+	.aboutus__main{
+		width: 330px;
+		height: 100%;
+		justify-content: center;
+	}
+	.about__information{
+		width: 95%;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.aboutus__photo{
+		display: none;
+	}
+	.aboutus__title{
+		font-size: 24px;
+		font-weight: bold;
+		padding-bottom: 5%;
+	}
+	.aboutus__text span{
+		text-align: center;
+		font-size: 16px;
+		padding-left: 5%;
+	}
+	.whychoose{
+		height: 950px;
+	}
+	.whychoose__main{
+		width: 330px;
+		height: 100%;
+		justify-content: space-evenly;
+	}
+	.whychoose__choose{
+		margin-top: 15px;
+	}
+	h1{
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.whychoose__cards{
+		height: 800px;
+		grid-template-rows: 50% 20% 26%;
+		grid-template-columns: 100%;
+		grid-gap: 15px;
+	}
+	.whychoose__box > p{
+		text-align: center;
+		font-size: 16px;
+		padding-left: 5%;
+	}
+	.dacks{
+		grid-row: 1 / 2;
+	}
+	.boardand{
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+	.rels{
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		background-position: -50px 0px;
+	}
+	.line{
+		display: none;
+	}
+	.map {
+		width: 100%;
+		height: 350px;
+	}
+	.information_timber_row {
+		flex-direction: column;
+	}
+	.information_timber_row > span {
+		font-size: 14px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.information_timber_row > button {
+		width: 90px;
+		height: 35px;
+		font-size: 14px;
+		border-radius: 12px;
 	}
 }

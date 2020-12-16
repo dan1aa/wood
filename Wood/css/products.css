@@ -24,7 +24,7 @@ content{
 	align-items: center;
 }
 .content__main{
-	width: 100%;
+	width: 1300px;
 	height: 1000px;
 	display: flex;
 	flex-direction: row;
@@ -216,7 +216,7 @@ content{
 	}
 	.content__box > button{
 		border-radius: 30px;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.map {
 		width: 100%;
