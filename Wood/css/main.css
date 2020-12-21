@@ -672,7 +672,7 @@ form h1 {
 
 	.product__tablet > div > button {
 		width: 110px;
-		height: 35px;	
+		height: 35px;
 		border-radius: 12px;
 		outline: none;
 		border: none;
@@ -689,18 +689,15 @@ form h1 {
 	.product__tablet:first-child > div:nth-child(2) {
 		background: url(../img/prewiew_two.jpg);
 		background-size: 100%;
-		
 	}
 	.product__tablet:nth-child(2) > div:nth-child(1) {
 		background: url(../img/prewiew_three.jpg);
 		margin-right: 30px;
 		background-size: 100%;
-		
 	}
 	.product__tablet:nth-child(2) > div:nth-child(2) {
 		background: url(../img/prewiew_four.jpg);
 		background-size: 100%;
-		
 	}
 
 }

@@ -30,7 +30,7 @@ header * {
 	filter: brightness(140%);
 }
 .header__li {
-	list-style: none;	
+	list-style: none;
 	font-size: 20px;
 	cursor: pointer;
 	text-decoration: none;
@@ -41,7 +41,7 @@ header * {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: flex-start;
-	justify-content: center; 
+	justify-content: center;
 }
 .information__line {
 	width: 100%;
